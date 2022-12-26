@@ -1,0 +1,173 @@
+
+#home .homePrints{
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#home .homePrintsTitle{
+    text-align: center;
+}
+
+#home .homePrintsTitle img{
+    width: 100%;
+    max-width: 290px;
+}
+#home .homePrintsTitle p{
+    font-weight: 700; 
+    font-size: 24px;
+}
+
+#home .homePrints .homeDesc{
+    width: 100%;
+    max-width: 900px;
+    padding: 40px 15px;
+    text-align: center;
+}
+
+#home .homePrints .homeDesc .homeDescTitle{
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+#home .homePrints .homeDesc .homeDescSubtitle{
+    font-weight: 400;
+    font-size: 12px;
+}
+
+#home .homeFeatures{
+    background-color: #000;
+    width: 100%;
+    padding: 70px 50px;
+}
+
+#home .homeFeatures .homeFeaturesContainer{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    justify-items: center;
+    align-items: flex-start;
+    grid-template-rows: repeat(3,1fr);
+    gap: 100px;
+}
+
+#home .homeFeatures .homeFeaturesContainer .feature{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+    text-align: center;
+}
+
+#home .homeFeatures .homeFeaturesContainer .feature .featureImg{
+    background-color: #fff;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+#home .homeFeatures .homeFeaturesContainer .feature .featureImg img{
+    width: 40px;
+}
+#home .homeFeatures .homeFeaturesContainer .feature .featureTitle{
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+#home .homeFeatures .homeFeaturesContainer .feature .featureSubtitle{
+    font-size: 14px;
+    font-weight: 300;
+}
+
+#home .homeContact{
+    width: 100%;
+    padding: 0 50px;
+    background: url('../../assets/contactanos.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#home .homeContact button{
+    width: 100%;
+    max-width: 355px;
+    margin: auto;
+    border-radius: 40px;
+    border: none;
+    padding: 14px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: #000;
+    color: #fff;
+    transition: transform .3s ease-in-out;
+    cursor: pointer;
+}
+#home .homeContact a{
+    width: 240px;
+    color: #fff;
+    text-decoration: none;
+ 
+}
+
+#home .homeContact button:hover{
+    transform: scale(1.05);
+}
+
+
+#home .homeContact button span{
+    font-size: 16px;
+}
+
+@media (min-width: 765px) {
+
+    #home .homePrints{
+        padding: 100px 0;
+    }
+
+    #home .homePrintsTitle img{
+        max-width: 540px;
+    }
+
+    #home .homePrintsTitle p{
+        font-size: 64px;
+    }
+
+    #home .homePrints .homeDesc .homeDescTitle{
+        font-size: 40px;
+        margin-bottom: 24px;
+    }
+    #home .homePrints .homeDesc .homeDescSubtitle{
+        font-size: 24px;
+    }
+
+    #home .homeFeatures .homeFeaturesContainer{
+        grid-template-rows: repeat(1,1fr);
+        grid-template-columns: repeat(3,1fr);
+    }
+
+    #home .homeContact{
+        height: 380px;
+    }
+
+    #home .homeContact a{
+        color: #fff;
+        text-decoration: none;
+        width: 355px;
+    }
+    #home .homeContact button span{
+        font-size: 24px;
+    }
+}
